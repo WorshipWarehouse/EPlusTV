@@ -1,0 +1,10 @@
+{
+  "versionCode": 2,
+  "versionName": "1.1.0",
+  "apkUrl": "https://downloads.example.com/gameday/app-release.apk",
+  "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "signerSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+  "minSdk": 25,
+  "publishedAtMs": 1763942400000,
+  "notes": "Guide stability fixes and faster cold start."
+}
