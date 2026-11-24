@@ -144,3 +144,6 @@ run*.sh
 .DS_Store
 config*/
 playroom/
+
+# Local Android toolchain (JDK/SDK/Gradle downloads), never committed
+.toolchain/
