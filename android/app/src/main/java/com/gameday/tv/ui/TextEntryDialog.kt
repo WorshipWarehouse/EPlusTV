@@ -21,7 +21,7 @@ class TextEntryDialog(
     hint: String = "",
     private val allowUrlSymbols: Boolean = false,
     private val onResult: (String) -> Unit,
-) : Dialog(context) {
+) : Dialog(context, com.gameday.tv.R.style.Theme_GameDay_Dialog) {
 
     private val value = StringBuilder(initial)
     private lateinit var valueView: TextView

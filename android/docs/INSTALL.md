@@ -24,7 +24,7 @@ Artifacts:
 Checks:
 
 ```bash
-./gradlew :app:testDebugUnitTest    # 62 unit tests
+./gradlew :app:testDebugUnitTest    # 64 unit tests
 ./gradlew :app:lintDebug            # API-level and correctness lint
 ./scripts/verify-apk.sh app/build/outputs/apk/release/app-release.apk
 ```

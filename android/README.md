@@ -19,7 +19,7 @@ android/
 │   │   ├── ui/              single-activity TV shell, screens, EPG grid, on-screen keyboard
 │   │   ├── AppContainer.kt  in-process "backend" wiring
 │   │   └── GameDayApp.kt
-│   └── src/test/java/…      62 JVM unit tests
+│   └── src/test/java/…      64 JVM unit tests
 ├── docs/                    audit, architecture decision, compatibility, install, Phase 2 record
 ├── scripts/                 build, install (ADB), verify APK, update manifest, device benchmark
 ├── NOTICE.md                third-party attribution (EPlusTV is MIT)
@@ -28,7 +28,7 @@ android/
 
 ## Status, stated precisely
 
-Verified: compiles; **62 unit tests pass**; **Lint 0 errors** (`minSdk 25` API check clean);
+Verified: compiles; **64 unit tests pass**; **Lint 0 errors** (`minSdk 25` API check clean);
 debug and release APKs assemble; release APK signature verifies (v2 scheme).
 
 Not verified: nothing has been executed on Android hardware or an emulator — the build host

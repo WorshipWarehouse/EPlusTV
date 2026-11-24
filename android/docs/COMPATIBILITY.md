@@ -1,14 +1,14 @@
 # GameDay compatibility and validation report
 
 Build: `com.gameday.tv` 1.0.0 (versionCode 1) · compileSdk 34 · **minSdk 25** · targetSdk 34
-Artifacts: `app-release.apk` 5,092,947 bytes · `app-debug.apk` 6,663,593 bytes
+Artifacts: `app-release.apk` 5,093,015 bytes · `app-debug.apk` 6,775,650 bytes
 
 ## 1. What was validated, and how
 
 | Check | Result |
 | --- | --- |
 | Kotlin/Java compile (`:app:compileDebugKotlin`, `:app:compileReleaseKotlin`) | Pass |
-| Unit test suite (`:app:testDebugUnitTest`) | **62 tests, 0 failures** |
+| Unit test suite (`:app:testDebugUnitTest`) | **64 tests, 0 failures** |
 | Android Lint (`:app:lintDebug`, `abortOnError = true`) | **0 errors, 36 warnings** (no `NewApi` findings) |
 | Debug APK assembly | Pass |
 | Release APK assembly + signature verification (`apksigner verify`) | Pass, APK Signature Scheme **v2**, 1 signer |

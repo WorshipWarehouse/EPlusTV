@@ -14,6 +14,13 @@
         <item name="android:windowActionModeOverlay">true</item>
     </style>
 
+    <style name="Theme.GameDay.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
     <style name="Theme.GameDay.Player" parent="Theme.GameDay">
         <item name="android:windowBackground">@color/code_bg</item>
         <item name="android:windowFullscreen">true</item>

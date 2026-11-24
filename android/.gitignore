@@ -8,6 +8,7 @@ captures/
 .externalNativeBuild/
 .cxx/
 *.apk
+!release/*.apk
 *.aab
 keystore.properties
 *.jks

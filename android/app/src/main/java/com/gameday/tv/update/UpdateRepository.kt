@@ -58,7 +58,7 @@ class UpdateRepository(
             if (target.exists()) target.delete()
             downloader.download(manifest.apkUrl, target, onProgress = onProgress)
 
-            val actualDigest = UpdateVerifier.sha256Hex(target.readBytes())
+            val actualDigest = UpdateVerifier.sha256Hex(target)
             val archive = inspector.inspect(target)
             val verification = UpdateVerifier.verify(
                 expectedSha256 = manifest.sha256,

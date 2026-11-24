@@ -1,5 +1,6 @@
 package com.gameday.tv.update
 
+import java.io.File
 import java.security.MessageDigest
 
 sealed class Verification {
@@ -22,6 +23,26 @@ object UpdateVerifier {
         val digest = MessageDigest.getInstance("SHA-256").digest(bytes)
         val output = StringBuilder(digest.size * 2)
         digest.forEach { byte ->
+            val value = byte.toInt() and 0xff
+            output.append(HEX[value ushr 4]).append(HEX[value and 0x0f])
+        }
+        return output.toString()
+    }
+
+    /** Streams the file so a multi-megabyte APK never lands in the heap at once. */
+    fun sha256Hex(file: File): String {
+        val digest = MessageDigest.getInstance("SHA-256")
+        file.inputStream().use { input ->
+            val buffer = ByteArray(64 * 1024)
+            while (true) {
+                val read = input.read(buffer)
+                if (read <= 0) break
+                digest.update(buffer, 0, read)
+            }
+        }
+        val bytes = digest.digest()
+        val output = StringBuilder(bytes.size * 2)
+        bytes.forEach { byte ->
             val value = byte.toInt() and 0xff
             output.append(HEX[value ushr 4]).append(HEX[value and 0x0f])
         }
