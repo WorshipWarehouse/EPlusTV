@@ -120,3 +120,16 @@ No physical-hardware measurements exist yet. The design targets the 1.5 GB Fire 
 
 `scripts/benchmark-device.sh` captures cold start, memory and playback stats on real
 hardware and writes them to `docs/PERFORMANCE_DEVICE.md`.
+
+## 10. Gaps, stated explicitly
+
+| Area | Status | Note |
+| --- | --- | --- |
+| On-device validation (API 25, armv7, arm64) | **Open** | No KVM/device in the build environment; run `scripts/benchmark-device.sh` on hardware |
+| Physical performance numbers | **Open** | Script provided; no measurements yet |
+| Upstream EPlusTV version tracking | Not implemented | GameDay tracks only its own signed releases; it does not poll EPlusTV tags |
+| Automated dependency CVE scan | Not automated | No scanner is wired into Gradle; run an SCA tool against the pinned versions, or `./gradlew :app:dependencies` for the graph |
+| Provider account sign-in (Fox/NFL/MLB/…) | **Deliberately absent** | See `UPSTREAM_AUDIT.md` §5 — would require embedded client secrets and device identity spoofing |
+| DRM / Widevine playback | **Not supported** | No license server; no bypass exists in the code |
+| Automated instrumentation tests | Not implemented | Unit tests cover logic; UI/player paths need a device or emulator to test |
+| Localisation | Not implemented | UI strings are English and mostly in code; Lint reports `SetTextI18n` warnings |

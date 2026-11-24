@@ -39,7 +39,7 @@ The brief's checklist is reproduced with the actual status for (a) the embedded-
 | Unit tests | 64 executed, 64 passed, 0 skipped |
 | Lint | 0 errors, 36 warnings, no `NewApi` |
 | Release APK | 5,093,015 bytes (4.9 MiB), APK Signature Scheme v2 |
-| Debug APK |  bytes |
+| Debug APK | 6,775,650 bytes |
 | DEX references | 84,164 across 2 dex files |
 | Native libraries in APK | none |
 | Dependencies | 6 direct runtime libraries (core-ktx, appcompat, recyclerview, lifecycle-runtime-ktx, coroutines, serialization + 3 Media3 artifacts) |
