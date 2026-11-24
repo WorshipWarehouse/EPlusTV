@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_row_title" type="id" />
+    <item name="tag_row_subtitle" type="id" />
+    <item name="tag_row_meta" type="id" />
+    <item name="tag_row_badge" type="id" />
+    <item name="tag_row_progress" type="id" />
+    <item name="tag_row_progress_track" type="id" />
+    <item name="tag_row_star" type="id" />
+    <item name="tag_guide_channel_cell" type="id" />
+    <item name="tag_guide_number" type="id" />
+    <item name="tag_guide_name" type="id" />
+    <item name="tag_guide_scroll" type="id" />
+    <item name="tag_guide_blocks" type="id" />
+</resources>
